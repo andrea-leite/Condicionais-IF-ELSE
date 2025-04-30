@@ -13,4 +13,4 @@ function calcularBonificacao(valorUnitario: number, quantidade: number) {
  }
  
  console.log(calcularBonificacao(20, 6));
- console.log(calcularBonificacao(15, 4));
+ console.log(calcularBonificacao(15, 4));
