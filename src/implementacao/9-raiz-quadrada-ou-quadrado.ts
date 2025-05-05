@@ -1,20 +1,20 @@
-function calcularRaizOuQuadrado(n: number): string {
-    if (n >= 0) {
-        if (n === 0) return "A raiz quadrada de 0 é 0."; // Caso especial para 0
+function calcularRaizOuQuadrado(numero: number): string {
+    if (numero >= 0) {
+        if (numero === 0) return "A raiz quadrada de 0 é 0."; // Caso especial para 0
 
         let raiz = 1;
         
-        while ((raiz + 1) * (raiz + 1) <= n) {
+        while ((raiz + 1) * (raiz + 1) <= numero) {
             raiz++;
         }
 
-        if (raiz * raiz === n) {
-            return `A raiz quadrada de ${n} é ${raiz}.`;
+        if (raiz * raiz === numero) {
+            return `A raiz quadrada de ${numero} é ${raiz}.`;
         } else {
-            return `A raiz quadrada aproximada de ${n} é ${raiz} (não é uma raiz perfeita).`;
+            return `A raiz quadrada aproximada de ${numero} é ${raiz} (não é uma raiz perfeita).`;
         }
     } else {
-        return `O quadrado de ${n} é ${n * n}.`;
+        return `O quadrado de ${numero} é ${numero * numero}.`;
     }
 }
 

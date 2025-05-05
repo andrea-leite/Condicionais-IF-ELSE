@@ -1,11 +1,11 @@
-function somaComAjuste(x:number, y:number): number {
-    let z:number;
-    z = x + y;
+function somaComAjuste(primeiroNumero:number, segundoNumero:number): number {
+    let resultado:number;
+    resultado = primeiroNumero + segundoNumero;
 
-    if(z > 20){
-        return (z + 8);
+    if(resultado > 20){
+        return (resultado + 8);
     }else {
-        return (z - 5); 
+        return (resultado - 5); 
     }    
 }
 console.log(somaComAjuste(15,10));

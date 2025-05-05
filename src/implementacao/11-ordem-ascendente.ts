@@ -1,34 +1,34 @@
-function ordenarAscendente(a: number, b: number, c: number): string {
+function ordenarAscendente(numeroPrimeiro: number, numeroSegundo: number, numeroTerceiro: number): string {
     let primeiro: number;
     let segundo: number;
     let terceiro: number;
   
-    if (a <= b && a <= c) {
-      primeiro = a;
-      if (b <= c) {
-        segundo = b;
-        terceiro = c;
+    if (numeroPrimeiro <= numeroSegundo && numeroPrimeiro <= numeroTerceiro) {
+      primeiro = numeroPrimeiro;
+      if (numeroSegundo <= numeroTerceiro) {
+        segundo = numeroSegundo;
+        terceiro = numeroTerceiro;
       } else {
-        segundo = c;
-        terceiro = b;
+        segundo = numeroTerceiro;
+        terceiro = numeroSegundo;
       }
-    } else if (b <= a && b <= c) {
-      primeiro = b;
-      if (a <= c) {
-        segundo = a;
-        terceiro = c;
+    } else if (numeroSegundo <= numeroPrimeiro && numeroSegundo <= numeroTerceiro) {
+      primeiro = numeroSegundo;
+      if (numeroPrimeiro <= numeroTerceiro) {
+        segundo = numeroPrimeiro;
+        terceiro = numeroTerceiro;
       } else {
-        segundo = c;
-        terceiro = a;
+        segundo = numeroTerceiro;
+        terceiro = numeroPrimeiro;
       }
     } else {
-      primeiro = c;
-      if (a <= b) {
-        segundo = a;
-        terceiro = b;
+      primeiro = numeroTerceiro;
+      if (numeroPrimeiro <= numeroSegundo) {
+        segundo = numeroPrimeiro;
+        terceiro = numeroSegundo;
       } else {
-        segundo = b;
-        terceiro = a;
+        segundo = numeroSegundo;
+        terceiro = numeroPrimeiro;
       }
     }
   

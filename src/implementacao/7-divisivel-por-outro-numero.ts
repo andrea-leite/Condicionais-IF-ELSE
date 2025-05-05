@@ -1,18 +1,17 @@
-function verificarDivisivel(a: number, b:number) : string{
-    
-    if (a % b == 0) {
-        return "A é divisivel por B";
-    }else {
-        return "A não é dividivel por B";
-    }
-}    
 const readlineSync = require('readline-sync');
 
-const numero = readlineSync.question('Digite um número: ');
-const outroNumero = readlineSync.question('Digite mais um número: ');
+const numeroRecebido = readlineSync.question('Digite um número: ');
+const numeroDivisor = readlineSync.question('Digite mais um número: ');
 
-const num1 = parseInt(numero);
-const num2 = parseInt(outroNumero);
+const numeroConvertido1 = parseInt(numeroRecebido);
+const numeroConvertido2 = parseInt(numeroDivisor);
 
+function verificarDivisivel(a: number, b: number): string {
+    if (a % b == 0) {
+        return "A é divisivel por B";
+    } else {
+        return "A não é dividivel por B";
+    }
+}
 
-console.log(verificarDivisivel(num1, num2));
+console.log(verificarDivisivel(numeroConvertido1, numeroConvertido2));
